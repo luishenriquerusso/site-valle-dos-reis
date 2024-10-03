@@ -4,7 +4,7 @@ import bcryptjs from 'bcryptjs';
 
 import { v4 as uuidv4 } from 'uuid';
 
-export async function POST(req: NextRequest, res: NextResponse) {
+export async function POST(req: NextRequest) {
   const { name, email, password, cpf } = await req.json();
 
   try {
@@ -45,7 +45,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
       message: "Usuário criado com sucesso!",
       user: newUser
     })
-
+   // eslint-disable-next-line
   } catch (error: any) {
     // console.error('Erro ao criar usuário:', error);
     if (error.code === 'P2002' && error.meta?.target?.includes('email')) {

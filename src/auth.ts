@@ -58,7 +58,7 @@ const nextauthconfig = {
       if (pathname === "/middlewareProtected") return !!auth;
       return true;
     },
-
+// eslint-disable-next-line
     async jwt({ token, user, trigger, session }: any){
       if(trigger === 'update'){
         return {...token, ...session.user};
@@ -68,6 +68,7 @@ const nextauthconfig = {
       if (user && user.phone) token.phone = user.phone;
       return token;
     },
+    // eslint-disable-next-line
     async session({ session, token }: any){
       session.user.id = token.sub
       session.user.role = token.role

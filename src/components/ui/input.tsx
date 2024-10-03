@@ -6,7 +6,7 @@ export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
     iconName?: 'email' | 'person' | 'lock';
   }
-
+// eslint-disable-next-line
   const getIconComponent = (iconName: any): React.ReactNode => {
     switch (iconName) {
       case 'email':
