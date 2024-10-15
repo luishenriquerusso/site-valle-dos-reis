@@ -51,8 +51,8 @@ export function Banner() {
 
 
   return (
-    <div className='max-w-[1380px] h-[640px] w-full m-auto pb-12 relative group opacity-90'>
-      <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full bg-center bg-cover duration-500'></div>
+    <div className='max-w-[1380px] h-[640px] w-full m-auto pb-12 relative group opacity-90 p-4 rounded-lg'>
+      <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full bg-center bg-cover duration-500 rounded-lg'></div>
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer' style={{ zIndex: 2 }}>
         <BsChevronCompactLeft onClick={prevSlide} size={30}/>
       </div>
