@@ -2,56 +2,37 @@
 import React, { useEffect, useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
+import { slides } from './db';
 
 export function Banner() {
   
-  const slides = [
-    {
-      url: '/images/banner/fachada-valle-dos-reis-cemiterio-e-crematorio-embu-das-artes-taboao-da-serra.jpg',
-      title: "",
-      titleColor:'text-gold-700',
-      titleBr:"",
-      sub: "",
-      subColor:'text-gold-500'
-    },
-    {
-      url: '/images/banner/sala_velorio_valle_dos_reis.jpg',
-      title: "",
-      titleColor:'text-gold-700',
-      titleBr:"",
-      sub: "",
-      subColor:'text-gold-500'
-    },
-  ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
+  const changeSlide = (direction: 'prev' | 'next' | number) => {
+    setCurrentIndex((prevIndex) => {
+      if (typeof direction === 'number') return direction;
+      return slides.reduce((newIndex, _, index, array) => {
+        if (direction === 'prev') {
+          return prevIndex === 0 ? array.length - 1 : prevIndex - 1;
+        } else {
+          return prevIndex === array.length - 1 ? 0 : prevIndex + 1;
+        }
+      }, prevIndex);
+    });
   };
 
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const goToSlide = (slideIndex: number) => {
-    setCurrentIndex(slideIndex);
-  };
+  const prevSlide = () => changeSlide('prev');
+  const nextSlide = () => changeSlide('next');
+  const goToSlide = (slideIndex: number) => changeSlide(slideIndex);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      nextSlide();
-    }, 5000);
+    const intervalId = setInterval(nextSlide, 5000);
     return () => clearInterval(intervalId);
-  }, [currentIndex]);
+  }, []);
 
 
   return (
-    <div className='max-w-[1380px] h-[640px] w-full m-auto pb-12 relative group opacity-90 p-4 rounded-lg'>
+    <div className='max-w-[1380px] h-[640px] w-full m-auto pb-12 relative group opacity-90 p-4 rounded-lg '>
       <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full bg-center bg-cover duration-500 rounded-lg'></div>
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer' style={{ zIndex: 2 }}>
         <BsChevronCompactLeft onClick={prevSlide} size={30}/>

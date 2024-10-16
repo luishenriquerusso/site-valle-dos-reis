@@ -1,17 +1,38 @@
 import { AboutUs } from "./components/aboutUs";
+import { Features } from "./components/features";
 import { Header } from "./components/header";
+import { Menu } from "./components/header/menu/menu";
 import { Banner } from "./components/slider";
 
 export default function Home() {
   return (
     <>
-      <div className=" flex justify-center items-center shadow-sm pb-4">
+      <div className=" flex justify-center items-center pb-4  border-slate-50 border-b-2 ">
         <Header/>
+      </div>
+      <div className=" flex justify-center items-center pb-4  border-slate-100 border-b-2">
+        <Menu/>
       </div>
 
       <main className="p4">
+      <div className="w-full bg-slate-50 py-8  border-slate-100 border-b-2">
         <Banner/>
+      </div>
+
+      <div className="w-full bg-slate-50 py-8  border-slate-200 border-b-2">
+        <Features/>
+      </div>
+
+
+
+    
+        <div className="w-full bg-slate-100 pt-10  border-slate-200 border-b-2">
         <AboutUs/>
+
+        </div>
+
+
+
       </main>
 
       <footer className="bg-slate-100 min-h-48 bottom-0 left-0 right-0">
