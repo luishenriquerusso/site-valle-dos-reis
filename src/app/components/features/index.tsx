@@ -14,7 +14,7 @@ export function Features() {
                 <div className="bg-white p-6 rounded-lg shadow-md text-center">
                     <FaFireAlt className="mx-auto mb-4 text-4xl text-[#ae9668]" />
                     <h3 className="text-xl font-semibold mb-2">Serviços de Cremação</h3>
-                    <p className="text-gray-600">Oferecemos opções de cremação com respeito e dignidade.</p>
+                    <p className="text-gray-600">Oferecemos opções de cremação.</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-md text-center">
                     <FaHeadset className="mx-auto mb-4 text-4xl text-[#ae9668]" />
