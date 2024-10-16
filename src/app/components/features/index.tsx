@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { FaTree, FaUmbrellaBeach, FaFireAlt, FaHeadset, FaCalendarAlt, FaHeart } from 'react-icons/fa'
 
 export function Features() {
