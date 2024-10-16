@@ -23,7 +23,9 @@ export function MobileMenu({ user } : { user: any }) {
           <DropdownMenuItem>Olá, {user?.name}</DropdownMenuItem>
         </Link>
 
-        {/* <DropdownMenuSeparator />
+        <DropdownMenuSeparator />
+
+        {/* 
 
         {user?.role === "admin" || user?.role === "superAdmin" && 
         <>
