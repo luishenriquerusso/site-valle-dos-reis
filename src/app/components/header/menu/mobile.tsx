@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { FaUserCircle } from "react-icons/fa"
-
+// eslint-disable-next-line
 export function MobileMenu({ user } : { user: any }) {
 
   return (
