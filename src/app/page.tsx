@@ -2,6 +2,7 @@ import { AboutUs } from "./components/aboutUs";
 import { Features } from "./components/features";
 import { Header } from "./components/header";
 import { Menu } from "./components/header/menu/menu";
+import { Products } from "./components/products";
 import { Banner } from "./components/slider";
 
 export default function Home() {
@@ -26,12 +27,18 @@ export default function Home() {
 
 
     
-        <div className="w-full bg-slate-100 pt-10  border-slate-200 border-b-2">
-        <AboutUs/>
+      <div className="w-full bg-slate-100 pt-10  border-slate-200 border-b-2">
+      <AboutUs/>
+      </div>
 
-        </div>
-
-
+      <div className="flex justify-center bg-slate-100 pt-10  border-slate-200 border-b-2">
+      <Products products={[
+        {id:1, name:'1'},
+        {id:1, name:'2'},
+        {id:1, name:'3'},
+        {id:1, name:'4'}
+        ]}/>
+      </div>
 
       </main>
 
