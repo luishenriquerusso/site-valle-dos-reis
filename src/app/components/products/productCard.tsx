@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const ProductCard = ({ product } : { product: any }) => {
+export const ProductCard = ({ product } : { product: Product }) => {
 
   return(
       <div key={product.id} className="group bg-white border rounded-lg py-2 px-2 hover:scale-95 transition-all min-h-[400px]">
@@ -18,11 +18,11 @@ export const ProductCard = ({ product } : { product: any }) => {
           </h3>
           <hr/>
           <div className="flex justify-between items-center mb-2.5 mt-2.5">
-          <p className=" italic text-xs">{product.weight}</p>
+          <p className=" italic text-xs">{}</p>
 
           </div>
           <div className=" h-20 overflow-y-auto scrollbar-hide p-1">
-            <p className="text-xs text-gray-700 text-justify ">{product.description}</p>
+            <p className="text-xs text-gray-700 text-justify ">{}</p>
           </div>
         </Link>
    
