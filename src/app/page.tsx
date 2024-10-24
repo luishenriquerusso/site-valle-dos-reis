@@ -1,11 +1,15 @@
+'use client'
+import { useState } from "react";
 import { AboutUs } from "./components/aboutUs";
 import { Features } from "./components/features";
 import { Header } from "./components/header";
 import { Menu } from "./components/header/menu/menu";
 import { Products } from "./components/products";
 import { Banner } from "./components/slider";
+import { Gallery } from "./components/gallery";
 
 export default function Home() {
+
 
   const products: Product[] = [
     {id:1, name:'Jazigo Standart com 3 Gavetas', image:'/images/products/jazigo2.jpg'},
@@ -42,6 +46,11 @@ export default function Home() {
       <div className="flex justify-center bg-slate-50 pt-10  border-slate-200 border-b-2">
         <Products products={products}/>
       </div>
+
+      <div className="flex justify-center bg-slate-50 pt-10  border-slate-200 border-b-2">
+       <Gallery/>
+      </div>
+
 
       </main>
 

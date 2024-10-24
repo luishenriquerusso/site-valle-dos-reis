@@ -33,8 +33,6 @@ export function Products({ products }: {products: Product[]}) {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-
-
     </div>
   )
 }
