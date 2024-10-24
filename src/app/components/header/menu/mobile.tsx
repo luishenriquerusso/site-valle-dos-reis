@@ -12,8 +12,8 @@ export function MobileMenu({ user } : { user: any }) {
 
       <DropdownMenuTrigger>
         {user?.image ? 
-          <Image src={user?.image} className=" rounded-full" width={30} height={30} alt={`${user?.name}`} /> : 
-          <FaUserCircle size={25} color='#ae9668' />
+          <Image src={user?.image} className=" rounded-full w-48" width={40} height={40} alt={`${user?.name}`} /> : 
+          <FaUserCircle size={35} color='#ae9668' />
         }
       </DropdownMenuTrigger>
 

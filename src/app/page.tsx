@@ -8,10 +8,12 @@ import { Banner } from "./components/slider";
 export default function Home() {
 
   const products: Product[] = [
-    {id:1, name:'1', image:'x'},
-    {id:1, name:'2', image:'x'},
-    {id:1, name:'3', image:'x'},
-    {id:1, name:'4', image:'x'}
+    {id:1, name:'Jazigo Standart com 3 Gavetas', image:'/images/products/jazigo2.jpg'},
+    {id:2, name:'Jazigo Duplo com 3 Gavetas e Área de Serviço', image:'/images/products/jazigo2.jpg'},
+    {id:3, name:'Jazigo Triplo com 6 Gavetas e Área de Serviço', image:'/images/products/jazigo2.jpg'},
+    {id:4, name:'Jazigo Standart com 4 Gavetas', image:'/images/products/jazigo2.jpg'},
+    {id:5, name:'Jazigo Standart com 4 Gavetas', image:'/images/products/jazigo2.jpg'},
+    {id:6, name:'Jazigo Standart com 4 Gavetas', image:'/images/products/jazigo2.jpg'}
     ]
 
   return (
@@ -36,8 +38,9 @@ export default function Home() {
       <AboutUs/>
       </div>
 
-      <div className="flex justify-center bg-slate-100 pt-10  border-slate-200 border-b-2">
-      <Products products={products}/>
+
+      <div className="flex justify-center bg-slate-50 pt-10  border-slate-200 border-b-2">
+        <Products products={products}/>
       </div>
 
       </main>

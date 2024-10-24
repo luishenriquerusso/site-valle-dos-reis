@@ -1,4 +1,4 @@
-import { FaTree, FaUmbrellaBeach, FaFireAlt, FaHeadset, FaCalendarAlt, FaHeart } from 'react-icons/fa'
+import { FaLeaf, FaCoffee, FaPhone, FaCalculator, FaShieldAlt, FaWheelchair } from 'react-icons/fa'
 
 export function Features() {
     return (
@@ -6,34 +6,34 @@ export function Features() {
        
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                    <FaTree className="mx-auto mb-4 text-4xl text-[#ae9668]" />
-                    <h3 className="text-xl font-semibold mb-2">Ambiente Tranquilo</h3>
-                    <p className="text-gray-600">Um local sereno para homenagear e recordar seus entes queridos.</p>
+                    <FaLeaf className="mx-auto mb-4 text-4xl text-[#ae9668]" />
+                    <h3 className="text-xl font-semibold mb-2">Sustentabilidade</h3>
+                    <p className="text-gray-600">Seguimos normas sustentáveis e nos preocupamos com o meio ambiente.</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                    <FaFireAlt className="mx-auto mb-4 text-4xl text-[#ae9668]" />
-                    <h3 className="text-xl font-semibold mb-2">Serviços de Cremação</h3>
-                    <p className="text-gray-600">Oferecemos opções de cremação.</p>
+                    <FaCoffee className="mx-auto mb-4 text-4xl text-[#ae9668]" />
+                    <h3 className="text-xl font-semibold mb-2">Lanchonete</h3>
+                    <p className="text-gray-600">Oferecemos uma lanchonete para sua comodidade.</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                    <FaHeadset className="mx-auto mb-4 text-4xl text-[#ae9668]" />
-                    <h3 className="text-xl font-semibold mb-2">Suporte 24/7</h3>
-                    <p className="text-gray-600">Nossa equipe está disponível a qualquer momento para auxiliá-lo.</p>
+                    <FaPhone className="mx-auto mb-4 text-4xl text-[#ae9668]" />
+                    <h3 className="text-xl font-semibold mb-2">Central do Cliente</h3>
+                    <p className="text-gray-600">Agilidade atravez de nossos canais de atendimento.</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                    <FaCalendarAlt className="mx-auto mb-4 text-4xl text-[#ae9668]" />
-                    <h3 className="text-xl font-semibold mb-2">Planejamento Antecipado</h3>
-                    <p className="text-gray-600">Ajudamos no planejamento funeral para sua tranquilidade futura.</p>
+                    <FaCalculator className="mx-auto mb-4 text-4xl text-[#ae9668]" />
+                    <h3 className="text-xl font-semibold mb-2">Condições e Parcelamentos</h3>
+                    <p className="text-gray-600">As melhores condições, venha conversar conosco.</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                    <FaHeart className="mx-auto mb-4 text-4xl text-[#ae9668]" />
-                    <h3 className="text-xl font-semibold mb-2">Cerimônias Personalizadas</h3>
-                    <p className="text-gray-600">Organizamos cerimônias únicas que honram a memória do seu ente querido.</p>
+                    <FaShieldAlt className="mx-auto mb-4 text-4xl text-[#ae9668]" />
+                    <h3 className="text-xl font-semibold mb-2">Segurança 24Horas</h3>
+                    <p className="text-gray-600">Grupo Siga cuidando de você!</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                    <FaUmbrellaBeach className="mx-auto mb-4 text-4xl text-[#ae9668]" />
-                    <h3 className="text-xl font-semibold mb-2">Jardins Memoriais</h3>
-                    <p className="text-gray-600">Belos jardins para reflexão e lembrança em um ambiente natural.</p>
+                    <FaWheelchair className="mx-auto mb-4 text-4xl text-[#ae9668]" />
+                    <h3 className="text-xl font-semibold mb-2">Acessibilidade</h3>
+                    <p className="text-gray-600">A atenção e conforto que você precisa.</p>
                 </div>
             </div>
         </div>
